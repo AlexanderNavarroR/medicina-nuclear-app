@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicina Nuclear Interactiva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-menu">
+    <h1>Aplicación Interactiva: Medicina Nuclear</h1>
+    <p>Explora cómo la tecnología nuclear puede transformar la medicina.</p>
+    <div class="menu-buttons">
+      <button id="radioisotopes">Explorador de Radioisótopos</button>
+      <button id="diagnosticSimulator">Simulador de Diagnóstico</button>
+      <button id="trivia">Trivia Interactiva</button>
+    </div>
+  </div>
+
+  <!-- Explorador de Radioisótopos -->
+  <div class="section hidden" id="radioisotopesSection">
+    <h2>Explorador de Radioisótopos</h2>
+    <div class="isotope-list">
+      <button class="isotope-btn" data-isotope="tecnecio">Tecnecio-99m</button>
+      <button class="isotope-btn" data-isotope="yodo">Yodo-131</button>
+      <button class="isotope-btn" data-isotope="lutecio">Lutecio-177</button>
+    </div>
+    <div id="isotopeInfo" class="hidden">
+      <h3 id="isotopeName"></h3>
+      <p id="isotopeDescription"></p>
+      <ul id="isotopeApplications"></ul>
+      <button id="backToRadioisotopes">Volver</button>
+    </div>
+    <button id="backToMenu1">Volver al Menú</button>
+  </div>
+
+  <!-- Simulador de Diagnóstico -->
+  <div class="section hidden" id="diagnosticSimulatorSection">
+    <h2>Simulador de Diagnóstico</h2>
+    <p>Selecciona un procedimiento para ver cómo los radioisótopos son fundamentales en el diagnóstico.</p>
+    <div class="diagnostic-options">
+      <button class="diagnostic-btn" data-procedure="tomografia">Tomografía</button>
+      <button class="diagnostic-btn" data-procedure="tiroides">Terapia de Tiroides</button>
+      <button class="diagnostic-btn" data-procedure="gammagrafia">Gammagrafía</button>
+    </div>
+    <div id="diagnosticDetails" class="hidden">
+      <h3 id="procedureTitle"></h3>
+      <p id="procedureDescription"></p>
+      <ul id="procedureApplications"></ul>
+      <button id="backToProcedures">Volver</button>
+    </div>
+    <button id="backToMenu2">Volver al Menú</button>
+  </div>
+
+  <!-- Trivia -->
+  <div class="section hidden" id="triviaSection">
+    <h2>Trivia Interactiva</h2>
+    <p>¿Qué tanto sabes sobre medicina nuclear? Responde estas preguntas:</p>
+    <div id="questions">
+      <div class="question" id="question1">
+        <p>¿Qué radioisótopo se usa principalmente para estudios de imágenes médicas?</p>
+        <button class="trivia-btn" data-correct="true">Tecnecio-99m</button>
+        <button class="trivia-btn">Yodo-131</button>
+        <button class="trivia-btn">Lutecio-177</button>
+      </div>
+      <div class="question hidden" id="question2">
+        <p>¿Cuál es el principal uso del Yodo-131?</p>
+        <button class="trivia-btn">Imágenes cardíacas</button>
+        <button class="trivia-btn" data-correct="true">Tratamiento de tiroides</button>
+        <button class="trivia-btn">Tratamiento de tumores óseos</button>
+      </div>
+    </div>
+    <p id="triviaFeedback">Selecciona una respuesta para ver si es correcta.</p>
+    <p id="finalTriviaFeedback" class="hidden"></p>
+    <button id="backToMenu3">Volver al Menú</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

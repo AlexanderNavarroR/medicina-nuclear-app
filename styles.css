@@ -1,0 +1,97 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #1e2022;
+  color: #ffffff;
+}
+
+h1 {
+  color: #ff5733;
+  font-size: 2.5rem;
+}
+
+p {
+  color: #dcdcdc;
+}
+
+.main-menu {
+  padding: 20px;
+}
+
+.menu-buttons button {
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #8e44ad, #3498db);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-buttons button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #3498db, #8e44ad);
+}
+
+.section {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.isotope-btn, .diagnostic-btn, .trivia-btn {
+  margin: 10px;
+  padding: 20px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #1abc9c, #16a085);
+  color: #ecf0f1;
+  border: 2px solid #16a085;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.isotope-btn:hover, .diagnostic-btn:hover, .trivia-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #16a085, #1abc9c);
+}
+
+#procedureTitle {
+  color: #f1c40f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#procedureDescription {
+  color: #ecf0f1;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+#procedureApplications li {
+  color: #bdc3c7;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+#procedureApplications {
+  text-align: left;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#finalTriviaFeedback {
+  color: #f39c12;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
